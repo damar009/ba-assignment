@@ -8,17 +8,16 @@ body{
 
 font-family:'Inter',sans-serif;
 
-height:100vh;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
 background: linear-gradient(135deg,#4f46e5,#9333ea);
 
 color:white;
+
+min-height:100vh;
+
+padding:40px 20px;
+
+display:flex;
+justify-content:center;
 
 }
 
@@ -26,7 +25,7 @@ color:white;
 
 width:100%;
 
-max-width:420px;
+max-width:480px;
 
 padding:30px;
 
@@ -62,15 +61,37 @@ h1{
 
 font-size:22px;
 
-margin-bottom:5px;
+margin-bottom:6px;
 
 }
 
 .bio{
 
-opacity:0.8;
+opacity:0.85;
 
-margin-bottom:25px;
+margin-bottom:30px;
+
+font-size:14px;
+
+}
+
+.section{
+
+margin-bottom:30px;
+
+}
+
+.section-title{
+
+font-size:14px;
+
+margin-bottom:12px;
+
+opacity:0.75;
+
+letter-spacing:1px;
+
+text-transform:uppercase;
 
 }
 
@@ -82,9 +103,9 @@ text-decoration:none;
 
 color:white;
 
-padding:15px;
+padding:14px;
 
-margin:10px 0;
+margin:8px 0;
 
 border-radius:12px;
 
@@ -98,7 +119,7 @@ transition: all .25s ease;
 
 .links a:hover{
 
-transform: translateY(-3px);
+transform: translateY(-2px);
 
 background:rgba(255,255,255,0.25);
 
@@ -108,31 +129,30 @@ box-shadow:0 10px 20px rgba(0,0,0,0.2);
 
 .footer{
 
-margin-top:20px;
+margin-top:25px;
 
 font-size:12px;
 
-opacity:.6;
+opacity:.7;
+
+line-height:1.5;
 
 }
 
+/* Mobile improvement */
 
-.section{
+@media (max-width:480px){
 
-margin-bottom:25px;
+.container{
+
+padding:25px 20px;
 
 }
 
-.section-title{
+.links a{
 
-font-size:16px;
+padding:13px;
 
-margin:15px 0 10px 0;
-
-opacity:0.8;
-
-font-weight:600;
-
-letter-spacing:1px;
+}
 
 }
