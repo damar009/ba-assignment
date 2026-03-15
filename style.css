@@ -115,3 +115,24 @@ font-size:12px;
 opacity:.6;
 
 }
+
+
+.section{
+
+margin-bottom:25px;
+
+}
+
+.section-title{
+
+font-size:16px;
+
+margin:15px 0 10px 0;
+
+opacity:0.8;
+
+font-weight:600;
+
+letter-spacing:1px;
+
+}
