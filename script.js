@@ -1,10 +1,13 @@
-const links = document.querySelectorAll(".links a")
+const weeks = document.querySelectorAll(".week-header")
 
-links.forEach(link => {
+weeks.forEach(header => {
 
-link.addEventListener("click", () => {
+header.addEventListener("click", () => {
 
-console.log("Clicked:", link.textContent)
+const content = header.nextElementSibling
+
+content.style.display =
+content.style.display === "grid" ? "none" : "grid"
 
 })
 
