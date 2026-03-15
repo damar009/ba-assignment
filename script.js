@@ -4,10 +4,7 @@ weeks.forEach(header => {
 
 header.addEventListener("click", () => {
 
-const content = header.nextElementSibling
-
-content.style.display =
-content.style.display === "grid" ? "none" : "grid"
+header.parentElement.classList.toggle("collapsed")
 
 })
 
