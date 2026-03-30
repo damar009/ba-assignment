@@ -174,14 +174,15 @@ cursor:pointer;
 
 .week-content{
 
-display:grid;
+display:flex;
 
-grid-template-columns:1fr 1fr;
+flex-direction:column;
 
-gap:10px;
+gap:15px;
 
 padding:15px;
 
+  
 }
 
 .week-content a{
@@ -226,4 +227,33 @@ display:none;
 
 .week.active{
 border:2px solid rgba(255,255,255,0.4);
+}
+
+.task-group{
+
+background:rgba(255,255,255,0.08);
+
+padding:12px;
+
+border-radius:10px;
+
+display:flex;
+
+flex-direction:column;
+
+gap:8px;
+  
+}
+
+.open-task{
+background:rgba(255,255,255,0.25) !important;
+font-weight:700;
+}
+
+.task-title{
+font-size:14px;
+opacity:0.9;
+margin-bottom:5px;
+text-align:center;
+font-weight:700;
 }
